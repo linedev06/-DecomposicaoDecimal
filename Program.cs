@@ -1,9 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("--- Decomposição Decimal ---");
 
-Console.Write("Digite um número inteiro...");
- int dezena = Convert.ToInt32(Console.ReadLine());    
- int centena = Convert.ToInt32(Console.ReadLine()); 
- int unidade = Convert.ToInt32(Console.ReadLine()); 
- int numero = Convert.ToInt32(Console.ReadLine()); 
- int restantes = Convert.ToInt32(Console.ReadLine()); 
+Console.Write("Digite um número inteiro:");
+
+int numero = Convert.ToInt32(Console.ReadLine());
+
+int restante = numero;
+
+int unidades = restante % 10;
+restante /= 10;
+
+int dezenas = restante % 10;
+restante /= 10;
+
+int centenas = restante;
+
+Console.WriteLine($"\nO número {numero} possui:");
+Console.WriteLine($"{unidades,10} unidade(s)");
+Console.WriteLine($"{dezenas,10} dezenas(s)");
+Console.WriteLine($"{centenas,10} centena(s).");
