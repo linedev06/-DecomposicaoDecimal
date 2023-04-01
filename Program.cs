@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("--- Decomposição Decimal ---");
+Console.WriteLine("-- Decomposição Decimal --");
 
 Console.Write("Digite um número inteiro:");
 
@@ -18,4 +18,4 @@ int centenas = restante;
 Console.WriteLine($"\nO número {numero} possui:");
 Console.WriteLine($"{unidades,10} unidade(s)");
 Console.WriteLine($"{dezenas,10} dezenas(s)");
-Console.WriteLine($"{centenas,10} centena(s).");
+Console.WriteLine($"{centenas,10} centena(s)");
